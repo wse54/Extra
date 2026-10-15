@@ -101,13 +101,43 @@
   <footer>Ma Boutique · Mini App Telegram</footer>
 </div>
 <script>
-  // Remplace ces exemples par tes vrais produits, descriptions et prix.
+  
+  // Liste des produits de la boutique
   const products = [
-    {id:1, name:"Dry Argentine", description:"Dry de très bonne qualité et inédit.", price:10, emoji:"📦", video:"videos/dry-argentine.mp4", poster:"images/dry-argentine.jpg"},
-    {id:2, name:"Mousseux Critical", description:"Mousseux très jaune et très bon goût.", price:10, emoji:"🎁", video:"videos/Mousseux-Critical2.mp4", poster:"images/Mousseux-Critical.jpg"},
-    {id:3, name:"Produit Gamma", description:"Description courte du produit.", price:19.90, emoji:"🛍️"},
-    {id:4, name:"Produit Delta", description:"Description courte du produit.", price:24.90, emoji:"✨"}
+    {
+      id: 1,
+      name: "Dry Argentine",
+      description: "Dry de très bonne qualité et inédit.",
+      price: 10,
+      emoji: "📦",
+      video: "videos/dry-argentine.mp4",
+      poster: "images/dry-argentine.jpg"
+    },
+    {
+      id: 2,
+      name: "Mousseux Critical",
+      description: "Mousseux très jaune et très bon goût.",
+      price: 10,
+      emoji: "🎁",
+      video: "videos/mousseux-critical.mp4",
+      poster: "images/mousseux-critical.jpg"
+    },
+    {
+      id: 3,
+      name: "Produit Gamma",
+      description: "Description courte du produit.",
+      price: 19.90,
+      emoji: "🛍️"
+    },
+    {
+      id: 4,
+      name: "Produit Delta",
+      description: "Description courte du produit.",
+      price: 24.90,
+      emoji: "✨"
+    }
   ];
+
   const cart = {};
   let orderText = "";
   const money = n => n.toLocaleString("fr-FR", {style:"currency", currency:"EUR"});
